@@ -768,6 +768,36 @@ textarea {
     background-repeat: no-repeat;
     z-index: 100;
   }
+
+  #loginSignupContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 !important;
+    align-items: center;
+  }
+  
+  .inputForm{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .inputForm form{
+    width: 100%;
+    padding: 2rem;
+  }
+  
+  #inputSection{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #inputRow{
+    display: flex;
+    flex-direction: column;
+  }
+
   #banner {
     display: block;
     width: 100%;

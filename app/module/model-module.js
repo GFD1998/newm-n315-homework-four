@@ -4,6 +4,7 @@ export default class Model{
     homeContent = `
     <div id="banner">
         <img src="assets/images/homeBanner.jpg" />
+        <h2 style="text-align: center;">Form Examples</h2>
     </div>
     <div>
         <p style="text-align: center;padding: 2rem;">
@@ -12,35 +13,288 @@ export default class Model{
     </div>
     `;
 
-    browseContent = `
-    <div class="photoGallery">
-    <div class="imageContainer">
-        <div class="imageContainerSection">
-            <div class="overlayImageContainer">
-                <div><a class="submitBtn" href="#VIEW">VIEW</a></div>
-                <div><a class="submitBtn" href="#EDIT">EDIT</a></div>
-                <div><a class="submitBtn" href="#DELETE">DELETE</a></div>
+    createContent = `
+    <div class="inputForm">
+        <form id="inputSection" action="./server/processsignup.php" method="POST">
+        <h1></h1>
+            <div id="inputRow">
+
+                <div id="dataPoint">
+
+                    <p>First Name</p>
+
+                    <input  type="text"  name="fname" required>
+
+                </div>
+
+                <div id="dataPoint">
+
+                    <p>Last Name</p>
+
+                    <input  type="text" name="lname" required>
+
+                </div>
+
+                <div id="dataPoint">
+
+                    <p>Email</p>
+
+                    <input  type="text"  name="email" required>
+
+                </div>
+
+                <div id="dataPoint">
+
+                    <p>Password</p>
+
+                    <input  type="password" name="passwd" required>
+
+                </div>
+
+                <div id="dataPoint">
+
+                    <p>Favorite Book</p>
+
+                    <input  type="text"  name="confirmpasswd" required>
+
+                </div>
+
+                <div id="dataPoint">
+
+                <p>Favorite Genre</p>
+
+                <input  type="text"  name="fname" required>
+
             </div>
-            <img src="assets/images/spino.jfif" />
-        </div>
-        <div class="imageContainerSection">
-            <div class="overlayImageContainer">
-                <div><a class="submitBtn" href="#VIEW">VIEW</a></div>
-                <div><a class="submitBtn" href="#EDIT">EDIT</a></div>
-                <div><a class="submitBtn" href="#DELETE">DELETE</a></div>
+
+            <div id="dataPoint">
+
+                <p>Favorite Vehicle</p>
+
+                <input  type="text" name="lname" required>
+
             </div>
-            <img src="assets/images/spino.jfif" />
-        </div>
-        <div class="imageContainerSection">
-            <div class="overlayImageContainer">
-                <div><a class="submitBtn" href="#VIEW">VIEW</a></div>
-                <div><a class="submitBtn" href="#EDIT">EDIT</a></div>
-                <div><a class="submitBtn" href="#DELETE">DELETE</a></div>
+
+            <div id="dataPoint">
+
+                <p>Favorite Sport</p>
+
+                <input  type="text"  name="email" required>
+
             </div>
-            <img src="assets/images/spino.jfif" />
-        </div>
+
+            <div id="dataPoint">
+
+                <p>Favorite Team</p>
+
+                <input  type="password" name="passwd" required>
+
+            </div>
+
+            <div id="dataPoint">
+
+                <p>Favorite Place</p>
+
+                <input  type="text"  name="confirmpasswd" required>
+
+            </div>
+
+            </div>
+
+            <button class="btnstyle submitbtn" type="submit" style="padding-top: 5px; cursor: pointer;" required>Create Account</button>
+
+        </form>
+
     </div>
-</div>`;
+    `;
+
+    editContent = `
+    <div class="inputForm">
+    <form id="inputSection" action="./server/processsignup.php" method="POST">
+    <h1></h1>
+        <div id="inputRow">
+
+            <div id="dataPoint">
+
+                <p>First Name</p>
+
+                <input  type="text"  name="fname" required>
+
+            </div>
+
+            <div id="dataPoint">
+
+                <p>Last Name</p>
+
+                <input  type="text" name="lname" required>
+
+            </div>
+
+            <div id="dataPoint">
+
+                <p>Email</p>
+
+                <input  type="text"  name="email" required>
+
+            </div>
+
+            <div id="dataPoint">
+
+                <p>Password</p>
+
+                <input  type="password" name="passwd" required>
+
+            </div>
+
+            <div id="dataPoint">
+
+                <p>Favorite Book</p>
+
+                <input  type="text"  name="confirmpasswd" required>
+
+            </div>
+
+            <div id="dataPoint">
+
+            <p>Favorite Genre</p>
+
+            <input  type="text"  name="fname" required>
+
+        </div>
+
+        <div id="dataPoint">
+
+            <p>Favorite Vehicle</p>
+
+            <input  type="text" name="lname" required>
+
+        </div>
+
+        <div id="dataPoint">
+
+            <p>Favorite Sport</p>
+
+            <input  type="text"  name="email" required>
+
+        </div>
+
+        <div id="dataPoint">
+
+            <p>Favorite Team</p>
+
+            <input  type="password" name="passwd" required>
+
+        </div>
+
+        <div id="dataPoint">
+
+            <p>Favorite Place</p>
+
+            <input  type="text"  name="confirmpasswd" required>
+
+        </div>
+
+        </div>
+
+        <button class="btnstyle submitbtn" type="submit" style="padding-top: 5px; cursor: pointer;" required>Create Account</button>
+
+    </form>
+
+</div>
+    `;
+
+    loginSignupContent = `
+    <div id="loginSignupContainer">
+            <div class="inputForm">
+    
+                <form id="loginForm" action="./server/processlogin.php" method="POST">
+    
+                    <h1>Login</h1><br>
+    
+                    <div id="dataPoint">
+    
+                        <p>Email</p>
+    
+                        <input type="text" name="loginemail" required>
+    
+                    </div>
+    
+                    <div id="dataPoint">
+    
+                        <p>Password</p>
+    
+                        <input type="text" name="loginpasswd" required><br><br>
+    
+                    </div>
+    
+                    <br>
+    
+                    <button class="btnstyle submitbtn" type="submit" style="padding-top: 5px; cursor: pointer;" required>Log in</button>
+    
+                </form>
+            </div>
+            <div class="inputForm">
+                    <form id="inputSection" action="./server/processsignup.php" method="POST">
+                    <h1>Sign-up</h1>
+                        <div id="inputRow">
+
+                        <div id="dataPoint">
+
+                        <p>First Name</p>
+
+                        <input  type="text"  name="fname" required>
+
+                    </div>
+
+                    <div id="dataPoint">
+
+                        <p>Last Name</p>
+
+                        <input  type="text" name="lname" required>
+
+                    </div>
+
+                            <div id="dataPoint">
+
+                                <p>Email</p>
+
+                                <input  type="text"  name="email" required>
+
+                            </div>
+
+                            <div id="dataPoint">
+
+                                <p>Password</p>
+
+                                <input  type="password" name="passwd" required>
+
+                            </div>
+
+                            <div id="dataPoint">
+
+                                <p>Confirm Password</p>
+
+                                <input  type="text"  name="confirmpasswd" required>
+
+                            </div>
+
+                        </div>
+
+                        <button class="btnstyle submitbtn" type="submit" style="padding-top: 5px; cursor: pointer;" required>Sign up</button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <br>
+
+        </div>
+        </div>
+    `;
 
     
 

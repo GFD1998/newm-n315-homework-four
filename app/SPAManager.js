@@ -19,13 +19,8 @@ export default class SPAManager{
         // window.location.hash = "home";
     }
 
-    logInContent(){
-        $("#mainContainer").html(this._model.logInContent);
-        // window.location.hash = "home";
-    }
-
-    createAccountContent(){
-        $("#mainContainer").html(this._model.createAccountContent);
+    loginSignupContent(){
+        $("#mainContainer").html(this._model.loginSignupContent);
         // window.location.hash = "home";
     }
 
@@ -59,8 +54,17 @@ export default class SPAManager{
                 case "#HOME":
                     this.homeContent();
                     break;
-                case "#BROWSE":
-                    this.browseContent();
+                case "#CREATE":
+                    this.createContent();
+                    break;
+                case "#EDIT":
+                    this.editContent();
+                    break;
+                case "#LOGIN":
+                    this.loginSignupContent();
+                    break;
+                case "#SIGNUP":
+                    this.loginSignupContent();
                     break;
                 default:
                     break;
