@@ -2,6 +2,7 @@ export default class SPAManager{
 
 
     _model;
+    userSettings;
 
 
     homeContent(){

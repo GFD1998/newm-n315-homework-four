@@ -1,5 +1,11 @@
 export default class Model{
+
+    constructor(userSettings){
+        this.userSettings = userSettings;
+    }
     pageName = "HOME";
+
+    userSettings;
 
     homeContent = `
     <div id="banner">
@@ -118,7 +124,7 @@ export default class Model{
 
                 <p>First Name</p>
 
-                <input  type="text"  name="fname" required>
+                <input  type="text"  name="fname" placeholder="${this.pageName}" required>
 
             </div>
 
@@ -295,12 +301,13 @@ export default class Model{
         </div>
         </div>
     `;
+    setUserSettings(US){
+        this.userSettings = US;
+    }
 
     
 
     defaultContent = this.homeContent;
-
-    constructor(){}
 
 }
 
